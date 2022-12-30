@@ -1,0 +1,54 @@
+/*Method Overloading:
+
+				Multiple Methods can have same name with different parameters and return type.
+- The muliple methods which performs different operations based on the different instance value.*/
+
+class Area
+{
+	int a;
+	double l,b;
+	double  r, pi=3.14;	
+		Area(int a1)
+		{
+			a = a1;		
+			System.out.println("Area of Square: "+( a*a));
+		}
+		Area(double l1,double b1)
+		{
+			l = l1;
+			b = b1;
+			System.out.println("Area of Rectangle: "+( l*b));
+		}
+		Area(double r1)
+		{
+				r = r1;
+				double cir = pi*r*r;
+				System.out.println("Area of Circle: "+cir);
+		}
+}
+class ConstOver
+{
+	public static void main(String args[])
+	{
+			Area a1 = new Area(10);
+			Area a2 = new Area(8.3,4.2);
+			Area a3 = new Area(3.2);				
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
